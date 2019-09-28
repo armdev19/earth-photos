@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="intro_next_button_width">132dp</dimen>
+
+    <dimen name="intro_buttons_text_size">16sp</dimen>
+    <dimen name="main_choose_text_size">24sp</dimen>
+    <dimen name="items_text_size_14">14sp</dimen>
+    <dimen name="intro_description_text_size_16">16sp</dimen>
+    <dimen name="items_time_text_size_20">20sp</dimen>
+
+    <dimen name="diagonal_layout_height">250dp</dimen>
+
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="elevation_6">6dp</dimen>
+
+    <dimen name="item_date_image_size">100dp</dimen>
+    <dimen name="item_date_text_width">100dp</dimen>
+
+    <dimen name="item_photo_radius">20dp</dimen>
+
+    <dimen name="guide_begin">472dp</dimen>
+
+    <dimen name="intro_text_size_25">25sp</dimen>
+    <dimen name="intro_image_height">320dp</dimen>
+
+
+
+
+
+
+</resources>

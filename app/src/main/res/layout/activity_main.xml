@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <com.github.florent37.diagonallayout.DiagonalLayout
+        android:id="@+id/diagonal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diagonal_layout_height"
+        app:diagonal_angle="0"
+        app:diagonal_direction="left"
+        app:diagonal_position="bottom">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/top_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_background"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:background="@color/linear_layout_text_bg">
+
+                <TextView
+                    android:id="@+id/top_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:padding="@dimen/padding_10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/intro_title_one"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/main_choose_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.github.florent37.diagonallayout.DiagonalLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/diagonal_layout"
+        android:padding="@dimen/padding_10" />
+
+</RelativeLayout>

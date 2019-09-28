@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:layout_marginTop="@dimen/margin_16"
+    android:layout_marginBottom="@dimen/margin_16"
+    app:cardCornerRadius="@dimen/item_photo_radius"
+    android:layout_marginLeft="@dimen/margin_16"
+    android:layout_marginRight="@dimen/margin_16"
+    app:cardElevation="@dimen/elevation_6"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:drawablePadding="@dimen/padding_8"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_time"
+        tools:text= "2019-01-01 15:15:00"
+        android:textStyle="bold"
+        android:textSize="@dimen/items_time_text_size_20" />
+
+</androidx.cardview.widget.CardView>

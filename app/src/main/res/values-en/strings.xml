@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Earth Photos</string>
+
+    <string name="set_as_wallpaper">Set as wallpaper</string>
+    <string name="share">Share photo</string>
+
+    <string name="set_as_wallpaper_completed">Wallpaper set</string>
+
+    <string name="intro_title_one">Choose date of photo</string>
+    <string name="intro_title_two">Choose a photo time</string>
+    <string name="intro_title_three">Set to Wallpaper</string>
+    <string name="intro_title_four">Share with friends</string>
+
+    <string name="intro_description_one">Select the date of the photos of the planet Earth by NASA satellites</string>
+    <string name="intro_description_two">You have several photos taken at different times of the day</string>
+    <string name="intro_description_three">Set your favorite photos of planet Earth on your device as wallpaper</string>
+    <string name="intro_description_four">Send your favorite photos to your friends using any social network</string>
+
+
+    <string name="skip_btn_text">Skip</string>
+    <string name="get_started_btn_text">Start</string>
+    <string name="next_btn_text">Next</string>
+    <string name="data_loading_error">Data loading error. Check your network connection</string>
+
+</resources>

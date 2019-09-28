@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/margin_10"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="@dimen/elevation_6"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/item_date_image_size"
+            android:layout_height="@dimen/item_date_image_size"
+            android:src="@drawable/ic_date" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="@dimen/item_date_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:background="@color/linear_layout_text_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="2019-06-27"
+            android:textSize="@dimen/items_text_size_14"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

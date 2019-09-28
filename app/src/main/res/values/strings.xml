@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Earth Photos</string>
+
+    <string name="set_as_wallpaper">Установить как обои</string>
+    <string name="share">Поделиться фото</string>
+
+    <string name="set_as_wallpaper_completed">Обои утановлены</string>
+
+    <string name="intro_title_one">Выберите дату съемки</string>
+    <string name="intro_title_two">Выберите время съемки</string>
+    <string name="intro_title_three">Установите как обои</string>
+    <string name="intro_title_four">Делитесь с друзьями</string>
+
+    <string name="intro_description_one">Выберите дату съемок планеты Земля спутниками компании Nasa</string>
+    <string name="intro_description_two">Вам доступно несколько фотографий, сделанных в разное время суток</string>
+    <string name="intro_description_three">Устанавливайте понравившиеся фотографии планеты Земля, в качестве обоев на Вашем устройстве</string>
+    <string name="intro_description_four">Отправляйте понравившиеся фотографии Вашим друзьям, используя любую социальную сеть</string>
+
+
+    <string name="skip_btn_text">Пропустить</string>
+    <string name="get_started_btn_text">Приступить</string>
+    <string name="next_btn_text">Далее</string>
+    <string name="data_loading_error">Ошибка загрузки данных. Проверьте Ваше соединение с сетью</string>
+
+</resources>
