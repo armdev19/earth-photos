@@ -6,8 +6,8 @@
 
     <string name="set_as_wallpaper_completed">Обои утановлены</string>
 
-    <string name="intro_title_one">Выберите дату съемки</string>
-    <string name="intro_title_two">Выберите время съемки</string>
+    <string name="intro_title_one">Выберите дату</string>
+    <string name="intro_title_two">Выберите время</string>
     <string name="intro_title_three">Установите как обои</string>
     <string name="intro_title_four">Делитесь с друзьями</string>
 
@@ -21,5 +21,6 @@
     <string name="get_started_btn_text">Приступить</string>
     <string name="next_btn_text">Далее</string>
     <string name="data_loading_error">Ошибка загрузки данных. Проверьте Ваше соединение с сетью</string>
+    <string name="privacy">Политика конфи....</string>
 
 </resources>

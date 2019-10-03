@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +40,7 @@ public class PhotoActivity extends AppCompatActivity {
     private boolean isToolbarVisible;
     private Bitmap photo;
 
+
     public static void start(Context caller, String url) {
         Intent intent = new Intent(caller, PhotoActivity.class);
         intent.putExtra(EXTRA_URL, url);
@@ -56,6 +59,7 @@ public class PhotoActivity extends AppCompatActivity {
         imageView = findViewById(R.id.image);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
+
 
         setSupportActionBar(toolbar);
 

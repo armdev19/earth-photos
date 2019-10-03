@@ -19,8 +19,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".intro.IntroActivity"
-            android:theme="@style/AppTheme.IntroActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.IntroActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,9 +29,19 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".PhotoListActivity" />
-        <activity android:name=".PhotoActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".PhotoListActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".PhotoActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
 
         </activity>
     </application>

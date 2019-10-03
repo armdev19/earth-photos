@@ -6,8 +6,8 @@
 
     <string name="set_as_wallpaper_completed">Wallpaper set</string>
 
-    <string name="intro_title_one">Choose date of photo</string>
-    <string name="intro_title_two">Choose a photo time</string>
+    <string name="intro_title_one">Choose date</string>
+    <string name="intro_title_two">Choose time</string>
     <string name="intro_title_three">Set to Wallpaper</string>
     <string name="intro_title_four">Share with friends</string>
 
@@ -21,5 +21,6 @@
     <string name="get_started_btn_text">Start</string>
     <string name="next_btn_text">Next</string>
     <string name="data_loading_error">Data loading error. Check your network connection</string>
+    <string name="privacy">Privacy Policy</string>
 
 </resources>

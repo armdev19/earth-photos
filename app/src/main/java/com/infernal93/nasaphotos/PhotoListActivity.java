@@ -2,6 +2,7 @@ package com.infernal93.nasaphotos;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +30,7 @@ public class PhotoListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     Adapter adapter;
     TextView timeText;
+    TextView policyPrivacy;
 
     public static void start(Context caller, String date) {
         Intent intent = new Intent(caller, PhotoListActivity.class);
@@ -47,6 +49,15 @@ public class PhotoListActivity extends AppCompatActivity {
 
         timeText = findViewById(R.id.top_title);
         timeText.setText(getString(R.string.intro_title_two));
+        policyPrivacy = findViewById(R.id.policy_privacy_text);
+
+        policyPrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                sendToPrivacyPolicy();
+            }
+        });
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
@@ -123,5 +134,11 @@ public class PhotoListActivity extends AppCompatActivity {
             text.setText(photo.getDate());
             this.photo = photo;
         }
+    }
+
+    private void sendToPrivacyPolicy() {
+
+        Intent privacyIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://armdev19.github.io/Privacy%20policy.html"));
+        startActivity(privacyIntent);
     }
 }

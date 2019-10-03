@@ -1,5 +1,7 @@
 package com.infernal93.nasaphotos;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.view.LayoutInflater;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     Adapter adapter;
+    TextView policyPrivacy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +36,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recycler_view);
+        policyPrivacy = findViewById(R.id.policy_privacy_text);
 
         adapter = new Adapter();
 
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+        policyPrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            sendToPrivacyPolicy();
+            }
+        });
 
         App app = (App) getApplication();
 
@@ -112,5 +124,11 @@ public class MainActivity extends AppCompatActivity {
             dateDTO = date;
             text.setText(date.getDate());
         }
+    }
+
+    private void sendToPrivacyPolicy() {
+
+        Intent privacyIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://armdev19.github.io/Privacy%20policy.html"));
+        startActivity(privacyIntent);
     }
 }

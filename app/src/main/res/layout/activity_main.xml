@@ -25,12 +25,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
+
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:background="@color/linear_layout_text_bg">
 
                 <TextView
@@ -43,9 +45,23 @@
                     android:text="@string/intro_title_one"
                     android:textColor="@color/white"
                     android:textSize="@dimen/main_choose_text_size"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
 
-            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/policy_privacy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/items_text_size_14"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10" />
+
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
